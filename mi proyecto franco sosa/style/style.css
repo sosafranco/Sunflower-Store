@@ -50,7 +50,6 @@ a, button, span, h1, h2, h3 {
 }
 
 header {
-    width: 100vw;
     height: 4rem;
     display: flex;
     justify-content:space-between;
@@ -117,12 +116,12 @@ header {
 }
 
 .section_sponsors > span {
-    width: 100vw;
+    display: flex;
     height: 3.5rem;
+    width: 99.01vw;
     font-size: 2.2rem;
     background-color: rgb(61, 59, 59);
     color: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -201,7 +200,7 @@ header {
 }
 
 .logo_sunflower {
-    padding: 2rem 0rem 0rem 2rem;
+    padding: 0.3rem 0rem 0rem 2rem;
 }
 
 .section_redes_sociales > h1 {
@@ -214,11 +213,12 @@ header {
 }
 
 .logos_container {
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    border-radius: 28px;
 }
 
 .logo_steam,
@@ -410,7 +410,7 @@ header {
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
     justify-content: center;
-    display: flex;
+    display: grid;
     background-color: rgb(253, 143, 53);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -427,21 +427,25 @@ header {
 }
 
 .card_skins_container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    place-content: center;
 }
 
+
 .card_bayonet_knife {
-    width: 50rem;
-    height: 50rem;
-    display: flex;
+    display: grid;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    border-radius: 1.2rem;
 }
 
 @media (max-width: 768px) {
@@ -453,5 +457,35 @@ header {
     }
     .section_payments > span {
         font-size: 25px;
+    }
+    .footer_container > span {
+        font-size: 14px;
+    }
+    .info_dolar > h1 {
+        font-size: 1.5rem;
+    }
+    .info_dolar > h2 {
+        font-size: 2rem;
+    }
+    .section_reputation > span {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .card_bayonet_knife {
+        padding: 10px;
+    }
+    .card_bayonet_knife > span {
+        font-size: 1.5rem;
+    }
+    .card_bayonet_knife > img {
+        width: 28rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer_container > span {
+        font-size: 12px;
     }
 }

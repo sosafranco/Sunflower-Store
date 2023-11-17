@@ -4,7 +4,9 @@
     align-items: center;
     gap: 4rem;
     padding: 4rem 0rem 4rem 0rem;
-    background-color: navajowhite;
+    background-image: url(../assets/images/girasoles.jpg);
+    background-position: center;
+    background-size: cover;
     font-family:sans-serif
 }
 

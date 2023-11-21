@@ -33,6 +33,14 @@
     font-family: sans-serif;
 }
 
+.section_welcome > h2:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section_welcome > h2 {
+    transition: text-shadow 0.4s ease-in-out;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -94,6 +102,14 @@ header {
     text-align: center;
 }
 
+.card-player_container {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-player_container:hover {
+    transform: scale(1.09);
+}
+
 .card-luken, .card-simple {
     padding: 45px;
     border: 1px solid #ccc;
@@ -149,7 +165,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: blue;
+    color: cornflowerblue;
     padding-top: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -194,15 +210,6 @@ header {
 .redes_sociales > svg {
     width: 3rem;
     height: 3rem;
-}
-
-.logo_sunflower > svg {
-    width: 4rem;
-    height: 4rem;
-}
-
-.logo_sunflower {
-    padding: 0.3rem 0rem 0rem 2rem;
 }
 
 .section_redes_sociales > h1 {
@@ -298,6 +305,7 @@ header {
     justify-content: space-between;
     width: 65rem;
     background-color: #094696;
+    border-radius: 10px;
 }
 
 .logo_mercado_pago a,
@@ -490,4 +498,12 @@ header {
     .footer_container > span {
         font-size: 12px;
     }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+}
+
+.navbar-dark .navbar-brand {
+    color: black !important;
 }

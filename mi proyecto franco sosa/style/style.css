@@ -1,5 +1,6 @@
 .section_welcome {
     display: flex;
+    color: snow;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
@@ -7,19 +8,19 @@
     background-image: url(../assets/images/girasoles.jpg);
     background-position: center;
     background-size: cover;
-    font-family:sans-serif
+    font-family: sans-serif
 }
 
-.section_welcome > h1 {
+.section_welcome>h1 {
     font-size: 3.5rem;
     text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
-    font-family:sans-serif
+    font-family: sans-serif
 }
 
-.section_welcome > h2 {
+.section_welcome>h2 {
     font-size: 3rem;
     text-align: center;
     justify-content: center;
@@ -28,16 +29,16 @@
     height: 10rem;
     width: 30rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color:lightblue;
+    background-color: lightblue;
     border-radius: 10px;
     font-family: sans-serif;
 }
 
-.section_welcome > h2:hover {
+.section_welcome>h2:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.section_welcome > h2 {
+.section_welcome>h2 {
     transition: text-shadow 0.4s ease-in-out;
 }
 
@@ -55,18 +56,23 @@ main {
     min-height: 93.6vh;
 }
 
-a, button, span, h1, h2, h3 {
+a,
+button,
+span,
+h1,
+h2,
+h3 {
     font-size: 1.7rem;
 }
 
 header {
     height: 4rem;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    background-color:navajowhite;
+    background-color: navajowhite;
     font-family: sans-serif;
 }
 
@@ -102,15 +108,14 @@ header {
     text-align: center;
 }
 
-.card-player_container {
+.card-luken:hover,
+.card-simple:hover {
+    transform: scale(1.025)
+}
+
+.card-luken,
+.card-simple {
     transition: transform 0.3s ease-in-out;
-}
-
-.card-player_container:hover {
-    transform: scale(1.09);
-}
-
-.card-luken, .card-simple {
     padding: 45px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -120,7 +125,8 @@ header {
     gap: 20px;
 }
 
-.card-luken img, .card-simple img {
+.card-luken img,
+.card-simple img {
     width: 100%;
     border-radius: 8px;
     height: 200px;
@@ -133,12 +139,12 @@ header {
     align-items: center;
 }
 
-.section_sponsors > span {
+.section_sponsors>span {
     display: flex;
     height: 3.5rem;
     width: 99.01vw;
     font-size: 2.2rem;
-    background-color: rgb(61, 59, 59);
+    background-color: black;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -150,12 +156,12 @@ header {
     gap: 10rem;
     justify-content: center;
     align-items: center;
-    background-color:rgb(61, 59, 59);
+    background-color: black;
     height: 5rem;
     color: #fff;
 }
 
-.section_reputation > span {
+.section_reputation>span {
     font-size: 2.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -170,17 +176,18 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.section_payments > span {
+.section_payments>span {
     font-size: 4rem;
 }
 
 .medios_de_pago {
+    display: flex;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
-.medios_de_pago > img {
+.medios_de_pago>img {
     width: 10%;
     height: 10%;
     text-shadow: black;
@@ -194,7 +201,7 @@ header {
     min-width: 90vw
 }
 
-.footer_container > span {
+.footer_container>span {
     text-decoration: none;
     font-family: sans-serif
 }
@@ -207,22 +214,24 @@ header {
     padding: 0rem 2rem 0rem 0rem;
 }
 
-.redes_sociales > svg {
+.redes_sociales>svg {
     width: 3rem;
     height: 3rem;
 }
 
-.section_redes_sociales > h1 {
+.section_redes_sociales>h1 {
+    display: flex;
+    background-color: navajowhite;
     font-size: 4rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
     justify-content: center;
-    display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .logos_container {
     display: grid;
+    padding: 5rem 0rem 0rem 0rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -235,6 +244,7 @@ header {
 .logo_twitter,
 .logo_facebook {
     display: flex;
+    border-radius: 10px;
     justify-content: space-between;
     width: 65rem;
     background-color: #090996;
@@ -254,9 +264,11 @@ header {
 .logo_instagram {
     background-color: crimson;
 }
+
 .logo_twitter {
     background-color: skyblue;
 }
+
 .logo_facebook {
     background-color: #451ae0;
 }
@@ -267,10 +279,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:sans-serif
+    font-family: sans-serif
 }
 
-.section_pagos > h1 {
+.section_pagos>h1 {
     font-size: 4rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
@@ -280,7 +292,7 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.section_pagos > h2 {
+.section_pagos>h2 {
     font-size: 2rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
@@ -320,19 +332,22 @@ header {
 }
 
 .logo_mercado_pago {
-    background-color:rgb(42, 121, 224);
+    background-color: rgb(42, 121, 224);
 }
+
 .logo_usdt {
     background-color: rgb(17, 160, 4);
 }
+
 .logo_paypal {
     background-color: #2250a5;
 }
+
 .logo_transferencia {
     background-color: rgb(192, 56, 56);
 }
 
-.como_abonar > span {
+.como_abonar>span {
     font-size: 2rem;
     text-align: center;
     padding: 4rem 0rem 4rem 0rem;
@@ -341,7 +356,7 @@ header {
     font-family: Arial, Helvetica, sans-serif
 }
 
-.dudas_abonar > span {
+.dudas_abonar>span {
     font-size: 2rem;
     text-align: center;
     padding: 4rem 0rem 4rem 0rem;
@@ -350,7 +365,7 @@ header {
     font-family: Arial, Helvetica, sans-serif
 }
 
-.como_vender > h1 {
+.como_vender>h1 {
     font-size: 4rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
@@ -360,7 +375,7 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.como_vender > h2 {
+.como_vender>h2 {
     font-size: 2rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
@@ -369,7 +384,7 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-.como_vender > span {
+.como_vender>span {
     font-size: 2rem;
     text-align: center;
     padding: 4rem 0rem 4rem 0rem;
@@ -379,15 +394,15 @@ header {
 }
 
 .logos_container_venta {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 25rem;
-    padding: 10rem 0rem 0rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    max-width: 50rem;
+    margin: 30px auto;
+    padding: 5rem 0rem 0rem 0rem;
 }
 
-.contacto_venta > span {
+.contacto_venta>span {
     font-size: 2rem;
     text-align: center;
     padding: 10rem 0rem 5rem 0rem;
@@ -396,7 +411,7 @@ header {
     font-family: Arial, Helvetica, sans-serif
 }
 
-.abono_venta > span {
+.abono_venta>span {
     font-size: 2rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
@@ -406,16 +421,16 @@ header {
 }
 
 .logos_container_abono {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 25rem;
-    padding: 5rem 0rem 0rem 0rem;
-    min-height: 25vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    padding: 0rem 0rem 5rem 0rem;
+    max-width: 70rem;
+    margin: 30px auto;
+    justify-items: center;
 }
 
-.info_dolar > h1 {
+.info_dolar>h1 {
     font-size: 2.5rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
@@ -425,7 +440,7 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.info_dolar > h2 {
+.info_dolar>h2 {
     font-size: 2.5rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
@@ -462,23 +477,76 @@ header {
     .card-player_container {
         grid-template-columns: 1fr;
     }
-    .section_reputation > span {
+
+    .section_reputation>span {
         font-size: 14px;
     }
-    .section_payments > span {
+
+    .section_payments>span {
         font-size: 25px;
     }
-    .footer_container > span {
+
+    .footer_container>span {
         font-size: 14px;
     }
-    .info_dolar > h1 {
+
+    .info_dolar>h1 {
         font-size: 1.5rem;
     }
-    .info_dolar > h2 {
+
+    .info_dolar>h2 {
         font-size: 2rem;
     }
-    .section_reputation > span {
+
+    .section_reputation>span {
         font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .logo_mercado_pago,
+    .logo_paypal,
+    .logo_transferencia,
+    .logo_usdt {
+        width: 40rem;
+    }
+
+    .logo_mercado_pago a,
+    .logo_paypal a,
+    .logo_transferencia a,
+    .logo_usdt a {
+        font-size: 3rem;
+    }
+
+    .logo_steam,
+    .logo_instagram,
+    .logo_twitter,
+    .logo_facebook {
+        width: 40rem;
+    }
+
+    .logo_steam a,
+    .logo_instagram a,
+    .logo_twitter a,
+    .logo_facebook a {
+        font-size: 4rem;
+    }
+
+    .contacto_consultas,
+    .contacto_form>span {
+        text-align: center;
+    }
+    .logos_container_venta {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-content: center;
+        justify-items: center;
+    }
+    .logos_container_abono {
+        grid-template-columns: 1fr;
+        gap: 50px;
     }
 }
 
@@ -486,19 +554,76 @@ header {
     .card_bayonet_knife {
         padding: 10px;
     }
-    .card_bayonet_knife > span {
+
+    .card_bayonet_knife>span {
         font-size: 1.5rem;
     }
-    .card_bayonet_knife > img {
+
+    .card_bayonet_knife>img {
         width: 28rem;
+    }
+
+    .logo_mercado_pago,
+    .logo_paypal,
+    .logo_transferencia,
+    .logo_usdt {
+        width: 35rem;
+    }
+
+    .logo_mercado_pago a,
+    .logo_paypal a,
+    .logo_transferencia a,
+    .logo_usdt a {
+        font-size: 3rem;
+    }
+    .logo_steam,
+    .logo_instagram,
+    .logo_twitter,
+    .logo_facebook {
+        width: 35rem;
+    }
+
+    .logo_steam a,
+    .logo_instagram a,
+    .logo_twitter a,
+    .logo_facebook a {
+        font-size: 4rem;
     }
 }
 
 @media (max-width: 320px) {
-    .footer_container > span {
+    .footer_container>span {
         font-size: 12px;
     }
+
+    .logo_mercado_pago,
+    .logo_paypal,
+    .logo_transferencia,
+    .logo_usdt {
+        width: 30rem;
+    }
+
+    .logo_mercado_pago a,
+    .logo_paypal a,
+    .logo_transferencia a,
+    .logo_usdt a {
+        font-size: 2.5rem;
+    }
+    .logo_steam,
+    .logo_instagram,
+    .logo_twitter,
+    .logo_facebook {
+        width: 30rem;
+    }
+
+    .logo_steam a,
+    .logo_instagram a,
+    .logo_twitter a,
+    .logo_facebook a {
+        font-size: 3rem;
+    }
 }
+
 
 .navbar-dark .navbar-nav .nav-link {
     color: black !important;

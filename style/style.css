@@ -7,7 +7,7 @@
     padding: 4rem 0rem 4rem 0rem;
     background-image: url(../assets/images/blurry-gradient-haikei.svg);
     background-size: cover;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
 .section_welcome>h1 {
@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
 .section_welcome>h2 {
@@ -27,7 +27,7 @@
     display: flex;
     height: 10rem;
     width: 30rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     background-color: lightblue;
     border-radius: 10px;
     font-family: sans-serif;
@@ -93,7 +93,7 @@ header {
 }
 
 .nav-bar li a:hover {
-    border-bottom: .1rem solid blueviolet;
+    border-bottom: 0.1rem solid blueviolet;
 }
 
 .card-player_container {
@@ -109,7 +109,7 @@ header {
 
 .card-luken:hover,
 .card-simple:hover {
-    transform: scale(1.025)
+    transform: scale(1.025);
 }
 
 .card-luken,
@@ -197,12 +197,12 @@ header {
     color: whitesmoke;
     display: flex;
     justify-content: center;
-    min-width: 90vw
+    min-width: 90vw;
 }
 
 .footer_container>span {
     text-decoration: none;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
 .redes_sociales {
@@ -225,7 +225,7 @@ header {
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
     justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logos_container {
@@ -256,7 +256,7 @@ header {
     font-size: 5rem;
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     margin-right: 1rem;
 }
 
@@ -278,7 +278,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
 .section_pagos>h1 {
@@ -297,7 +297,7 @@ header {
     padding: 5rem 0rem 5rem 0rem;
     justify-content: center;
     display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logos_container_pagos {
@@ -326,7 +326,7 @@ header {
     font-size: 5rem;
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     margin-right: 1rem;
 }
 
@@ -352,7 +352,7 @@ header {
     padding: 4rem 0rem 4rem 0rem;
     justify-content: center;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .dudas_abonar>span {
@@ -361,7 +361,7 @@ header {
     padding: 4rem 0rem 4rem 0rem;
     justify-content: center;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .como_vender>h1 {
@@ -380,7 +380,7 @@ header {
     padding: 5rem 0rem 5rem 0rem;
     justify-content: center;
     display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .como_vender>span {
@@ -389,7 +389,7 @@ header {
     padding: 4rem 0rem 4rem 0rem;
     justify-content: center;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logos_container_venta {
@@ -407,7 +407,7 @@ header {
     padding: 10rem 0rem 5rem 0rem;
     justify-content: center;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .abono_venta>span {
@@ -416,7 +416,7 @@ header {
     padding: 5rem 0rem 5rem 0rem;
     justify-content: center;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logos_container_abono {
@@ -461,7 +461,6 @@ header {
     text-align: center;
     place-content: center;
 }
-
 
 .card_bayonet_knife {
     display: grid;
@@ -536,6 +535,7 @@ header {
     .contacto_form>span {
         text-align: center;
     }
+
     .logos_container_venta {
         display: grid;
         grid-template-columns: 1fr;
@@ -543,6 +543,7 @@ header {
         justify-content: center;
         justify-items: center;
     }
+
     .logos_container_abono {
         grid-template-columns: 1fr;
         gap: 50px;
@@ -575,6 +576,7 @@ header {
     .logo_usdt a {
         font-size: 3rem;
     }
+
     .logo_steam,
     .logo_instagram,
     .logo_twitter,
@@ -608,6 +610,7 @@ header {
     .logo_usdt a {
         font-size: 2.5rem;
     }
+
     .logo_steam,
     .logo_instagram,
     .logo_twitter,
@@ -623,7 +626,6 @@ header {
     }
 }
 
-
 .navbar-dark .navbar-nav .nav-link {
     color: black !important;
 }
@@ -631,3 +633,5 @@ header {
 .navbar-dark .navbar-brand {
     color: black !important;
 }
+
+/*# sourceMappingURL=style.css.map */

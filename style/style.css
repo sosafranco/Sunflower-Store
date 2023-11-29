@@ -1,58 +1,59 @@
+.section_welcome, .section_welcome > h1, .section_welcome > h2, header, .section_sponsors > span, .section_reputation > span, .footer_container > span, .contacto_consultas, .contacto_form {
+  font-family: sans-serif;
+}
+
 .section_welcome {
-    display: flex;
-    color: darkslategray;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-    padding: 4rem 0rem 4rem 0rem;
-    background-image: url(../assets/images/blurry-gradient-haikei.svg);
-    background-size: cover;
-    font-family: sans-serif;
+  display: flex;
+  color: darkslategray;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 0rem 4rem 0rem;
+  background-image: url(../assets/images/blurry-gradient-haikei.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.section_welcome>h1 {
-    font-size: 3.5rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-family: sans-serif;
+.section_welcome > h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.section_welcome>h2 {
-    font-size: 3rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 10rem;
-    width: 30rem;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    background-color: lightblue;
-    border-radius: 10px;
-    font-family: sans-serif;
+.section_welcome > h2 {
+  font-size: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 10rem;
+  width: 30rem;
+  background-color: lightcyan;
+  border-radius: 10px;
 }
 
-.section_welcome>h2:hover {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.section_welcome > h2:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.section_welcome>h2 {
-    transition: text-shadow 0.4s ease-in-out;
+.section_welcome > h2 {
+  transition: text-shadow 0.4s ease-in-out;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 main {
-    min-height: 93.6vh;
+  min-height: 93.6vh;
 }
 
 a,
@@ -61,577 +62,567 @@ span,
 h1,
 h2,
 h3 {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 header {
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: navajowhite;
-    font-family: sans-serif;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: dimgrey;
 }
 
 .nav-bar {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-bar li,
 .nav-bar li a {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 .nav-bar li a {
-    font-size: 2.5rem;
-    color: black;
-    transition: border-bottom 1s;
+  font-size: 2.5rem;
+  color: black;
+  transition: border-bottom 1s;
 }
 
 .nav-bar li a:hover {
-    border-bottom: 0.1rem solid blueviolet;
+  border-bottom: 0.1rem solid blueviolet;
 }
 
 .card-player_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 100rem;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 100rem;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .card-luken:hover,
 .card-simple:hover {
-    transform: scale(1.025);
+  transform: scale(1.025);
 }
 
 .card-luken,
 .card-simple {
-    transition: transform 0.3s ease-in-out;
-    padding: 45px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  transition: transform 0.3s ease-in-out;
+  padding: 45px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .card-luken img,
 .card-simple img {
-    width: 100%;
-    border-radius: 8px;
-    height: 200px;
+  width: 100%;
+  border-radius: 8px;
+  height: 200px;
 }
 
 .section_sponsors {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.section_sponsors>span {
-    display: flex;
-    height: 3.5rem;
-    width: 99.01vw;
-    font-size: 2.2rem;
-    background-color: black;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.section_sponsors > span {
+  display: flex;
+  height: 3.5rem;
+  width: 99.01vw;
+  font-size: 2.2rem;
+  background-color: black;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
 }
 
 .section_reputation {
-    display: flex;
-    gap: 10rem;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 5rem;
-    color: #fff;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 5rem;
+  color: #fff;
 }
 
-.section_reputation>span {
-    font-size: 2.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.section_reputation > span {
+  font-size: 2.2rem;
 }
 
 .section_payments {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: cornflowerblue;
-    padding-top: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: cornflowerblue;
+  padding-top: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.section_payments>span {
-    font-size: 4rem;
+.section_payments > span {
+  font-size: 4rem;
 }
 
 .medios_de_pago {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
-.medios_de_pago>img {
-    width: 10%;
-    height: 10%;
-    text-shadow: black;
+.medios_de_pago > img {
+  width: 10%;
+  height: 10%;
+  text-shadow: black;
 }
 
 .footer_container {
-    background-color: black;
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    min-width: 90vw;
+  background-color: dimgrey;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  min-width: 90vw;
 }
 
-.footer_container>span {
-    text-decoration: none;
-    font-family: sans-serif;
+.footer_container > span {
+  text-decoration: none;
 }
 
 .redes_sociales {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 0rem 2rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0rem 2rem 0rem 0rem;
 }
 
-.redes_sociales>svg {
-    width: 3rem;
-    height: 3rem;
+.redes_sociales > svg {
+  width: 3rem;
+  height: 3rem;
 }
 
-.section_redes_sociales>h1 {
-    display: flex;
-    background-color: navajowhite;
-    font-size: 4rem;
-    text-align: center;
-    padding: 5rem 0rem 5rem 0rem;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.section_redes_sociales > h1 {
+  background-image: url(../assets/images/blurry-gradient-haikei.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  font-size: 4rem;
+  text-align: center;
+  padding: 5rem 0rem 5rem 0rem;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logos_container {
-    display: grid;
-    padding: 5rem 0rem 0rem 0rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 28px;
+  display: grid;
+  padding: 5rem 0rem 0rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 28px;
 }
 
 .logo_steam,
 .logo_instagram,
 .logo_twitter,
 .logo_facebook {
-    display: flex;
-    border-radius: 10px;
-    justify-content: space-between;
-    width: 65rem;
-    background-color: #090996;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 65rem;
+  background-color: #090996;
 }
 
 .logo_steam a,
 .logo_instagram a,
 .logo_twitter a,
 .logo_facebook a {
-    font-size: 5rem;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin-right: 1rem;
+  font-size: 5rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-right: 1rem;
 }
 
 .logo_instagram {
-    background-color: crimson;
+  background-color: crimson;
 }
 
 .logo_twitter {
-    background-color: skyblue;
+  background-color: skyblue;
 }
 
 .logo_facebook {
-    background-color: #451ae0;
+  background-color: #451ae0;
 }
 
 .contacto_consultas,
 .contacto_form {
-    padding-top: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
+  font-size: 1.3rem;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.section_pagos>h1 {
-    font-size: 4rem;
-    text-align: center;
-    padding: 5rem 0rem 5rem 0rem;
-    justify-content: center;
-    display: flex;
-    background-color: navajowhite;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.section_pagos > h1 {
+  background-image: url(../assets/images/blurry-gradient-haikei.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 4rem;
+  text-align: center;
+  padding: 5rem 0rem 5rem 0rem;
+  justify-content: center;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.section_pagos>h2 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 5rem 0rem 5rem 0rem;
-    justify-content: center;
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.section_pagos > h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5rem 0rem 5rem 0rem;
+  justify-content: center;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logos_container_pagos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo_mercado_pago,
 .logo_usdt,
 .logo_paypal,
 .logo_transferencia {
-    display: flex;
-    justify-content: space-between;
-    width: 65rem;
-    background-color: #094696;
-    border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 65rem;
+  background-color: #094696;
+  border-radius: 10px;
 }
 
 .logo_mercado_pago a,
 .logo_usdt a,
 .logo_paypal a,
 .logo_transferencia a {
-    font-size: 5rem;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin-right: 1rem;
+  font-size: 5rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-right: 1rem;
 }
 
 .logo_mercado_pago {
-    background-color: rgb(42, 121, 224);
+  background-color: rgb(42, 121, 224);
 }
 
 .logo_usdt {
-    background-color: rgb(17, 160, 4);
+  background-color: rgb(17, 160, 4);
 }
 
 .logo_paypal {
-    background-color: #2250a5;
+  background-color: #2250a5;
 }
 
 .logo_transferencia {
-    background-color: rgb(192, 56, 56);
+  background-color: rgb(192, 56, 56);
 }
 
-.como_abonar>span {
-    font-size: 2rem;
-    text-align: center;
-    padding: 4rem 0rem 4rem 0rem;
-    justify-content: center;
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+.como_abonar > span {
+  font-size: 2rem;
+  text-align: center;
+  padding: 4rem 0rem 4rem 0rem;
+  justify-content: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.dudas_abonar>span {
-    font-size: 2rem;
-    text-align: center;
-    padding: 4rem 0rem 4rem 0rem;
-    justify-content: center;
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+.dudas_abonar > span {
+  font-size: 2rem;
+  text-align: center;
+  padding: 4rem 0rem 4rem 0rem;
+  justify-content: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.como_vender>h1 {
-    font-size: 4rem;
-    text-align: center;
-    padding: 5rem 0rem 5rem 0rem;
-    justify-content: center;
-    display: flex;
-    background-color: navajowhite;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.como_vender > h1 {
+  background-image: url(../assets/images/blurry-gradient-haikei.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 4rem;
+  text-align: center;
+  padding: 5rem 0rem 5rem 0rem;
+  justify-content: center;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.como_vender>h2 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 5rem 0rem 5rem 0rem;
-    justify-content: center;
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.como_vender > h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5rem 0rem 5rem 0rem;
+  justify-content: center;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.como_vender>span {
-    font-size: 2rem;
-    text-align: center;
-    padding: 4rem 0rem 4rem 0rem;
-    justify-content: center;
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+.como_vender > span {
+  font-size: 2rem;
+  text-align: center;
+  padding: 4rem 0rem 4rem 0rem;
+  justify-content: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .logos_container_venta {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-    max-width: 50rem;
-    margin: 30px auto;
-    padding: 5rem 0rem 0rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  max-width: 50rem;
+  margin: 30px auto;
+  padding: 5rem 0rem 0rem 0rem;
 }
 
-.contacto_venta>span {
-    font-size: 2rem;
-    text-align: center;
-    padding: 10rem 0rem 5rem 0rem;
-    justify-content: center;
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+.logo_instagram_venta:hover,
+.logo_facebook_venta:hover,
+.logo_twitter_venta:hover {
+  transform: scale(1.1);
 }
 
-.abono_venta>span {
-    font-size: 2rem;
-    text-align: center;
-    padding: 5rem 0rem 5rem 0rem;
-    justify-content: center;
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+.logo_instagram_venta,
+.logo_facebook_venta,
+.logo_twitter_venta {
+  transition: transform 0.2s ease-in-out;
+}
+
+.contacto_venta > span {
+  font-size: 2rem;
+  text-align: center;
+  padding: 10rem 0rem 5rem 0rem;
+  justify-content: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.abono_venta > span {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5rem 0rem 5rem 0rem;
+  justify-content: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .logos_container_abono {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 100px;
-    padding: 0rem 0rem 5rem 0rem;
-    max-width: 70rem;
-    margin: 30px auto;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  padding: 0rem 0rem 5rem 0rem;
+  max-width: 70rem;
+  margin: 30px auto;
+  justify-items: center;
 }
 
-.info_dolar>h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 5rem 0rem 5rem 0rem;
-    justify-content: center;
-    display: grid;
-    background-color: rgb(253, 143, 53);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.info_dolar > h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5rem 0rem 5rem 0rem;
+  justify-content: center;
+  display: grid;
+  background-color: rgb(253, 143, 53);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.info_dolar>h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 5rem 0rem 5rem 0rem;
-    justify-content: center;
-    display: flex;
-    background-color: rgb(1, 143, 1);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: whitesmoke;
+.info_dolar > h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5rem 0rem 5rem 0rem;
+  justify-content: center;
+  display: flex;
+  background-color: rgb(1, 143, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
 }
 
 .card_skins_container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 200px;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    place-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  place-content: center;
 }
 
 .card_bayonet_knife {
-    display: grid;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
+  display: grid;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card_bayonet_knife:hover {
+  transform: scale(1.02);
 }
 
 @media (max-width: 768px) {
-    .card-player_container {
-        grid-template-columns: 1fr;
-    }
-
-    .section_reputation>span {
-        font-size: 14px;
-    }
-
-    .section_payments>span {
-        font-size: 25px;
-    }
-
-    .footer_container>span {
-        font-size: 14px;
-    }
-
-    .info_dolar>h1 {
-        font-size: 1.5rem;
-    }
-
-    .info_dolar>h2 {
-        font-size: 2rem;
-    }
-
-    .section_reputation>span {
-        font-size: 1.3rem;
-    }
+  .card-player_container {
+    grid-template-columns: 1fr;
+  }
+  .section_reputation > span {
+    font-size: 14px;
+  }
+  .section_payments > span {
+    font-size: 25px;
+  }
+  .footer_container > span {
+    font-size: 14px;
+  }
+  .info_dolar > h1 {
+    font-size: 1.5rem;
+  }
+  .info_dolar > h2 {
+    font-size: 2rem;
+  }
+  .section_reputation > span {
+    font-size: 1.3rem;
+  }
 }
-
 @media (max-width: 425px) {
-
-    .logo_mercado_pago,
-    .logo_paypal,
-    .logo_transferencia,
-    .logo_usdt {
-        width: 40rem;
-    }
-
-    .logo_mercado_pago a,
-    .logo_paypal a,
-    .logo_transferencia a,
-    .logo_usdt a {
-        font-size: 3rem;
-    }
-
-    .logo_steam,
-    .logo_instagram,
-    .logo_twitter,
-    .logo_facebook {
-        width: 40rem;
-    }
-
-    .logo_steam a,
-    .logo_instagram a,
-    .logo_twitter a,
-    .logo_facebook a {
-        font-size: 4rem;
-    }
-
-    .contacto_consultas,
-    .contacto_form>span {
-        text-align: center;
-    }
-
-    .logos_container_venta {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 50px;
-        justify-content: center;
-        justify-items: center;
-    }
-
-    .logos_container_abono {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
+  .logo_mercado_pago,
+  .logo_paypal,
+  .logo_transferencia,
+  .logo_usdt {
+    width: 40rem;
+  }
+  .logo_mercado_pago a,
+  .logo_paypal a,
+  .logo_transferencia a,
+  .logo_usdt a {
+    font-size: 3rem;
+  }
+  .logo_steam,
+  .logo_instagram,
+  .logo_twitter,
+  .logo_facebook {
+    width: 40rem;
+  }
+  .logo_steam a,
+  .logo_instagram a,
+  .logo_twitter a,
+  .logo_facebook a {
+    font-size: 4rem;
+  }
+  .contacto_consultas,
+  .contacto_form > span {
+    text-align: center;
+  }
+  .logos_container_venta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    justify-content: center;
+    justify-items: center;
+  }
+  .logos_container_abono {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 }
-
 @media (max-width: 375px) {
-    .card_bayonet_knife {
-        padding: 10px;
-    }
-
-    .card_bayonet_knife>span {
-        font-size: 1.5rem;
-    }
-
-    .card_bayonet_knife>img {
-        width: 28rem;
-    }
-
-    .logo_mercado_pago,
-    .logo_paypal,
-    .logo_transferencia,
-    .logo_usdt {
-        width: 35rem;
-    }
-
-    .logo_mercado_pago a,
-    .logo_paypal a,
-    .logo_transferencia a,
-    .logo_usdt a {
-        font-size: 3rem;
-    }
-
-    .logo_steam,
-    .logo_instagram,
-    .logo_twitter,
-    .logo_facebook {
-        width: 35rem;
-    }
-
-    .logo_steam a,
-    .logo_instagram a,
-    .logo_twitter a,
-    .logo_facebook a {
-        font-size: 4rem;
-    }
+  .card_bayonet_knife {
+    padding: 10px;
+  }
+  .card_bayonet_knife > span {
+    font-size: 1.5rem;
+  }
+  .card_bayonet_knife > img {
+    width: 28rem;
+  }
+  .logo_mercado_pago,
+  .logo_paypal,
+  .logo_transferencia,
+  .logo_usdt {
+    width: 35rem;
+  }
+  .logo_mercado_pago a,
+  .logo_paypal a,
+  .logo_transferencia a,
+  .logo_usdt a {
+    font-size: 3rem;
+  }
+  .logo_steam,
+  .logo_instagram,
+  .logo_twitter,
+  .logo_facebook {
+    width: 35rem;
+  }
+  .logo_steam a,
+  .logo_instagram a,
+  .logo_twitter a,
+  .logo_facebook a {
+    font-size: 4rem;
+  }
 }
-
 @media (max-width: 320px) {
-    .footer_container>span {
-        font-size: 12px;
-    }
-
-    .logo_mercado_pago,
-    .logo_paypal,
-    .logo_transferencia,
-    .logo_usdt {
-        width: 30rem;
-    }
-
-    .logo_mercado_pago a,
-    .logo_paypal a,
-    .logo_transferencia a,
-    .logo_usdt a {
-        font-size: 2.5rem;
-    }
-
-    .logo_steam,
-    .logo_instagram,
-    .logo_twitter,
-    .logo_facebook {
-        width: 30rem;
-    }
-
-    .logo_steam a,
-    .logo_instagram a,
-    .logo_twitter a,
-    .logo_facebook a {
-        font-size: 3rem;
-    }
+  .footer_container > span {
+    font-size: 12px;
+  }
+  .logo_mercado_pago,
+  .logo_paypal,
+  .logo_transferencia,
+  .logo_usdt {
+    width: 30rem;
+  }
+  .logo_mercado_pago a,
+  .logo_paypal a,
+  .logo_transferencia a,
+  .logo_usdt a {
+    font-size: 2.5rem;
+  }
+  .logo_steam,
+  .logo_instagram,
+  .logo_twitter,
+  .logo_facebook {
+    width: 30rem;
+  }
+  .logo_steam a,
+  .logo_instagram a,
+  .logo_twitter a,
+  .logo_facebook a {
+    font-size: 3rem;
+  }
 }
-
 .navbar-dark .navbar-nav .nav-link {
-    color: black !important;
+  color: whitesmoke !important;
 }
 
 .navbar-dark .navbar-brand {
-    color: black !important;
-}
-
-/*# sourceMappingURL=style.css.map */
+  color: whitesmoke !important;
+}/*# sourceMappingURL=style.css.map */

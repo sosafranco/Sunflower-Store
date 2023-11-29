@@ -1,3 +1,15 @@
+//aplicando sass
+$font-family: sans-serif;
+@mixin fondo_pages {
+    background-image: url(../assets/images/blurry-gradient-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+//fin de sass
+
+.section_welcome, .section_welcome > h1, .section_welcome > h2, header, .section_sponsors > span, .section_reputation > span, .footer_container > span, .contacto_consultas, .contacto_form {
+    font-family: $font-family;
+}
 .section_welcome {
     display: flex;
     color: darkslategray;
@@ -5,9 +17,7 @@
     align-items: center;
     gap: 4rem;
     padding: 4rem 0rem 4rem 0rem;
-    background-image: url(../assets/images/blurry-gradient-haikei.svg);
-    background-size: cover;
-    font-family: sans-serif
+    @include fondo_pages;
 }
 
 .section_welcome>h1 {
@@ -16,7 +26,6 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    font-family: sans-serif
 }
 
 .section_welcome>h2 {
@@ -27,10 +36,8 @@
     display: flex;
     height: 10rem;
     width: 30rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: lightblue;
+    background-color: lightcyan;
     border-radius: 10px;
-    font-family: sans-serif;
 }
 
 .section_welcome>h2:hover {
@@ -71,8 +78,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: navajowhite;
-    font-family: sans-serif;
+    background-color: dimgrey;
 }
 
 .nav-bar {
@@ -147,7 +153,6 @@ header {
     color: #fff;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .section_reputation {
@@ -162,7 +167,6 @@ header {
 
 .section_reputation>span {
     font-size: 2.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .section_payments {
@@ -193,7 +197,7 @@ header {
 }
 
 .footer_container {
-    background-color: black;
+    background-color: dimgrey;
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -202,7 +206,6 @@ header {
 
 .footer_container>span {
     text-decoration: none;
-    font-family: sans-serif
 }
 
 .redes_sociales {
@@ -219,8 +222,8 @@ header {
 }
 
 .section_redes_sociales>h1 {
+    @include fondo_pages;
     display: flex;
-    background-color: navajowhite;
     font-size: 4rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
@@ -274,20 +277,20 @@ header {
 
 .contacto_consultas,
 .contacto_form {
+    font-size: 1.3rem;
     padding-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif
 }
 
 .section_pagos>h1 {
+    @include fondo_pages;
     font-size: 4rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
     justify-content: center;
     display: flex;
-    background-color: navajowhite;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -365,12 +368,12 @@ header {
 }
 
 .como_vender>h1 {
+    @include fondo_pages;
     font-size: 4rem;
     text-align: center;
     padding: 5rem 0rem 5rem 0rem;
     justify-content: center;
     display: flex;
-    background-color: navajowhite;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -399,6 +402,18 @@ header {
     max-width: 50rem;
     margin: 30px auto;
     padding: 5rem 0rem 0rem 0rem;
+}
+
+.logo_instagram_venta:hover,
+.logo_facebook_venta:hover,
+.logo_twitter_venta:hover {
+    transform: scale(1.1);
+}
+
+.logo_instagram_venta,
+.logo_facebook_venta,
+.logo_twitter_venta {
+    transition: transform 0.2s ease-in-out;
 }
 
 .contacto_venta>span {
@@ -462,7 +477,6 @@ header {
     place-content: center;
 }
 
-
 .card_bayonet_knife {
     display: grid;
     padding: 15px;
@@ -470,6 +484,11 @@ header {
     border-radius: 8px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card_bayonet_knife:hover {
+    transform: scale(1.020);
 }
 
 @media (max-width: 768px) {
@@ -624,9 +643,9 @@ header {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: black !important;
+    color: whitesmoke !important;
 }
 
 .navbar-dark .navbar-brand {
-    color: black !important;
+    color: whitesmoke !important;
 }

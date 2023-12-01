@@ -12,7 +12,7 @@ header,
 
 .section_welcome {
   display: flex;
-  color: darkslategray;
+  color: midnightblue;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
@@ -157,7 +157,7 @@ header {
 .section_sponsors > span {
   display: flex;
   height: 3.5rem;
-  width: 99.01vw;
+  width: 99.04vw;
   font-size: 2.2rem;
   background-color: black;
   color: #fff;
@@ -184,10 +184,13 @@ header {
   justify-content: center;
   align-items: center;
   color: cornflowerblue;
-  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .section_payments > span {
   font-size: 4rem;
+  color: midnightblue;
+  font-family: sans-serif;
 }
 
 .medios_de_pago {
@@ -203,22 +206,11 @@ header {
   text-shadow: black;
 }
 
-.footer_container {
-  background-color: dimgrey;
-  color: whitesmoke;
-  display: flex;
-  justify-content: center;
-  min-width: 90vw;
-}
-
-.footer_container > span {
-  text-decoration: none;
-}
-
 .section_redes_sociales > h1 {
   background-image: url(../assets/images/blurry-gradient-haikei.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  color: midnightblue;
   display: flex;
   font-size: 4rem;
   text-align: center;
@@ -242,6 +234,7 @@ header {
 .logo_twitter,
 .logo_facebook {
   display: flex;
+  align-items: center;
   border-radius: 10px;
   justify-content: space-between;
   width: 65rem;
@@ -271,19 +264,18 @@ header {
   background-color: #451ae0;
 }
 
-.contacto_consultas,
-.contacto_form {
+.contacto_consultas {
+  display: flex;
   font-size: 1.3rem;
   padding-top: 5rem;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .section_pagos > h1 {
   background-image: url(../assets/images/blurry-gradient-haikei.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  color: midnightblue;
   font-size: 4rem;
   text-align: center;
   padding: 5rem 0rem 5rem 0rem;
@@ -314,6 +306,7 @@ header {
 .logo_paypal,
 .logo_transferencia {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 65rem;
   background-color: #094696;
@@ -369,6 +362,7 @@ header {
   background-image: url(../assets/images/blurry-gradient-haikei.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  color: midnightblue;
   font-size: 4rem;
   text-align: center;
   padding: 5rem 0rem 5rem 0rem;
@@ -629,6 +623,8 @@ header {
 
 .contacto_form {
   display: flex;
+  font-size: 1.3rem;
+  padding-top: 5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -638,7 +634,7 @@ header {
   flex-direction: column;
   gap: 1rem;
   max-width: 600px;
-  width: 100%;
+  width: 90%;
   margin-bottom: 1rem;
 }
 .contacto_form form:hover {
@@ -673,7 +669,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 125px;
+  height: 120px;
 }
 
 .footer_container > span {

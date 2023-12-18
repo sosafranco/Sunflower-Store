@@ -3,8 +3,6 @@ $font-family: sans-serif;
 
 $main-font-size: 1.7rem;
 
-$navbar-bg-color: dimgrey;
-
 $h1-color: midnightblue;
 
 @mixin fondo_pages {
@@ -22,7 +20,6 @@ $h1-color: midnightblue;
 
 //fin de sass
 
-header,
 .section_welcome,
 .section_welcome>h1,
 .section_sponsors>span,
@@ -67,11 +64,13 @@ header,
 .tienda_de_skins > a > h2 {
     font-family: $font-family;
     font-size: 3rem;
+    color: midnightblue;
 }
 
 .tienda_de_skins:hover {
     @include hover-shadow;
     transform: scale(1.010);
+    transition: 0.1s;
 }
 
 * {
@@ -95,37 +94,6 @@ h1,
 h2,
 h3 {
     font-size: $main-font-size;
-}
-
-header {
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: $navbar-bg-color;
-}
-
-.nav-bar {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-bar li,
-.nav-bar li a {
-    list-style: none;
-    text-decoration: none;
-}
-
-.nav-bar li a {
-    font-size: 2.5rem;
-    color: black;
-    transition: border-bottom 1s;
-}
-
-.nav-bar li a:hover {
-    border-bottom: .1rem solid blueviolet;
 }
 
 .card-player_container {
@@ -172,9 +140,9 @@ header {
     >span {
         display: flex;
         height: 3.5rem;
-        width: 99.04vw;
+        width: 100%;
         font-size: 2.2rem;
-        background-color: black;
+        background-color: midnightblue;
         color: #fff;
         justify-content: center;
         align-items: center;
@@ -186,7 +154,7 @@ header {
     gap: 10rem;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: midnightblue;
     height: 5rem;
     color: #fff;
 
@@ -456,7 +424,8 @@ header {
     padding: 5rem 0rem 5rem 0rem;
     justify-content: center;
     display: grid;
-    background-color: rgb(253, 143, 53);
+    background-color: midnightblue;
+    color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -653,12 +622,21 @@ header {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: whitesmoke !important;
+    color: snow !important;
 }
 
 .navbar-dark .navbar-brand {
-    color: whitesmoke !important;
+    color: snow !important;
 }
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgb(255 255 255 / 0%);
+}
+
 //inicio formulario
 .contacto_form {
     display: flex;
@@ -706,8 +684,9 @@ header {
 
 //inicio footer
 .footer_container {
-    background-color: dimgrey;
-    color: whitesmoke;
+    background-image: url(../assets/images/blurry-gradient-haikei.svg);
+    background-size: cover;
+    color: midnightblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -729,11 +708,11 @@ header {
 
 .redes_sociales i {
     font-size: 24px;
-    color: white;
+    color: midnightblue;
     transition: color 0.3s ease;
 }
 
 .redes_sociales i:hover {
-    color: #f0e112;
+    color: #f01242;
 }
 //fin footer

@@ -480,10 +480,6 @@ h3 {
   }
 }
 @media (max-width: 425px) {
-  .contacto_consultas,
-  .contacto_form > span {
-    text-align: center;
-  }
   .card_bayonet_knife > img {
     width: 20rem;
   }
@@ -551,6 +547,10 @@ h3 {
   }
   .card_skins_container {
     grid-template-columns: 1fr;
+  }
+  .contacto_consultas,
+  .contacto_form > span {
+    text-align: center;
   }
 }
 .navbar-dark .navbar-nav .nav-link {

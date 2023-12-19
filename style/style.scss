@@ -442,7 +442,7 @@ h3 {
 
 .card_skins_container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 200px;
     margin: 20px auto;
@@ -498,50 +498,17 @@ h3 {
 
 @media (max-width: 425px) {
 
-    .logo_mercado_pago,
-    .logo_paypal,
-    .logo_transferencia,
-    .logo_usdt {
-        width: 40rem;
-    }
-
-    .logo_mercado_pago a,
-    .logo_paypal a,
-    .logo_transferencia a,
-    .logo_usdt a {
-        font-size: 3rem;
-    }
-
-    .logo_steam,
-    .logo_instagram,
-    .logo_twitter,
-    .logo_facebook {
-        width: 40rem;
-    }
-
-    .logo_steam a,
-    .logo_instagram a,
-    .logo_twitter a,
-    .logo_facebook a {
-        font-size: 4rem;
-    }
-
     .contacto_consultas,
     .contacto_form>span {
         text-align: center;
     }
 
-    .logos_container_venta {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 50px;
-        justify-content: center;
-        justify-items: center;
+    .card_bayonet_knife > img {
+        width: 20rem;
     }
 
-    .logos_container_abono {
-        grid-template-columns: 1fr;
-        gap: 50px;
+    .card_skins_container > .card_bayonet_knife > img {
+        width: 30rem;
     }
 }
 
@@ -558,32 +525,8 @@ h3 {
         width: 28rem;
     }
 
-    .logo_mercado_pago,
-    .logo_paypal,
-    .logo_transferencia,
-    .logo_usdt {
-        width: 35rem;
-    }
-
-    .logo_mercado_pago a,
-    .logo_paypal a,
-    .logo_transferencia a,
-    .logo_usdt a {
-        font-size: 3rem;
-    }
-
-    .logo_steam,
-    .logo_instagram,
-    .logo_twitter,
-    .logo_facebook {
-        width: 35rem;
-    }
-
-    .logo_steam a,
-    .logo_instagram a,
-    .logo_twitter a,
-    .logo_facebook a {
-        font-size: 4rem;
+    .card_skins_container > .card_bayonet_knife > img {
+        width: 30rem;
     }
 }
 
@@ -592,11 +535,17 @@ h3 {
         font-size: 12px;
     }
 
+    .card_skins_container > .card_bayonet_knife > img {
+        width: 25rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
     .logo_mercado_pago,
     .logo_paypal,
     .logo_transferencia,
     .logo_usdt {
-        width: 30rem;
+        width: 31rem;
     }
 
     .logo_mercado_pago a,
@@ -618,6 +567,23 @@ h3 {
     .logo_twitter a,
     .logo_facebook a {
         font-size: 3rem;
+    }
+
+    .logos_container_venta {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .logos_container_abono {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .card_skins_container {
+        grid-template-columns: 1fr;
     }
 }
 
